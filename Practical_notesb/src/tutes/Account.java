@@ -2,8 +2,10 @@ package tutes;
 
 public class Account {
 	
-	private String name; private String ID;
-	public double balance;
+	private String name; 
+	private String ID;
+	private double balance;
+	private int withdrawals = 0;
 	
 	public Account(String name, String ID, double balance) {
 		this.name = name;
@@ -18,11 +20,13 @@ public class Account {
 	public boolean withdraw(double amt) {
 		if (balance > amt) {
 			balance -= amt;
+			withdrawals += 1;
 			return true;
 		}
 		return false;
 	}
 	
+	//for simplicity this method can just take no arguments.
 	public String getName(Account acct) {
 		return acct.name;
 	}
@@ -32,6 +36,8 @@ public class Account {
 		return true;
 	}
 
+	public 
+	
 }
 
 
