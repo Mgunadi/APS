@@ -11,16 +11,27 @@ public class Account {
 		this.balance = balance;
 	}
 	
-	public void getBalance() {
+	public double getBalance() {
 		return balance;
 	}
 	
-	public void withdraw(double amt) {
-		balance -= amt;
+	public boolean withdraw(double amt) {
+		if (balance > amt) {
+			balance -= amt;
+			return true;
+		}
+		return false;
 	}
 	
-	public void deposit(double amt) {
-		balance += amt; }
+	public String getName(Account acct) {
+		return acct.name;
+	}
+	
+	public boolean deposit(double amt) {
+		balance += amt; 
+		return true;
 	}
 
 }
+
+
