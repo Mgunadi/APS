@@ -1,16 +1,14 @@
 package tutes;
 
 public class Account {
-	Testersds
 	
-
 	private String name; private String ID;
 	public double balance;
 	
-	public void Account(String name, String ID, double balance) {
-		name = name;
-		ID = ID;
-		balance = balance;
+	public Account(String name, String ID, double balance) {
+		this.name = name;
+		this.ID = ID;
+		this.balance = balance;
 	}
 	
 	public void getBalance() {
