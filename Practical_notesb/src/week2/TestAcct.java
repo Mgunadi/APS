@@ -1,4 +1,4 @@
-package tutes;
+package week2;
 
 public class TestAcct {
 
