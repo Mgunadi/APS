@@ -36,7 +36,7 @@ public class Account {
 		return true;
 	}
 
-	public 
+
 	
 }
 
