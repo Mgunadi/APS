@@ -36,7 +36,14 @@ public class Account {
 		return true;
 	}
 
-
+	public boolean addInterest(double ir) {
+		if (this.balance < 0) {
+			return false;
+		} else {
+			this.balance *= 1 + ir;
+			return true;
+		}
+	}
 	
 }
 

@@ -16,6 +16,9 @@ public class TestAcct {
 		
 		System.out.println("Balance for " + a2.getName(a2) + " is " +
 		a2.getBalance());
+		
+		a2.addInterest(0.05);
+		System.out.println("Adding interest of 6% to Smith T ... " + a2.getBalance());
 
 	}
 
