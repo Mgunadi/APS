@@ -17,12 +17,10 @@ public class Casual {
 		this.salary = salary;
 	}
 	
-	public Casual(String ID, String name, double h_rate) {
-		this.ID = ID;
-		this.name = name;
-		this.h_rate = h_rate;
-		this.hours = 0;
-		this.salary = 1000;
+	public Casual(String ID2, String name2, double h_rate2) {
+		this(ID2, name2, h_rate2, 0, 1000);		//invokes the previous constructor by feeding in this current constructor's arguments
+		//this.hours = 0;
+		//this.salary = 1000;
 	}
 
 	public boolean addHour(double h) {
@@ -34,7 +32,7 @@ public class Casual {
 	public boolean changeRate(double r) {
 		if ((r > -10 ) && (r < 10)) {
 			h_rate += (0.1 * h_rate);
-			hours = 0;
+			hours = 0; 
 			return true;
 		} else {
 			return false;
