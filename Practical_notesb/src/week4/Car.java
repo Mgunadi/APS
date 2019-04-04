@@ -1,8 +1,8 @@
 package week4;
 
-public class Car extends Vehicle implements Drivable{
-/*	private static String name;
+public class Car extends Vehicle {
 	private static int numSold;
+	private String name;
 	
 	public Car(String name, double price) {
 		super(price);
@@ -11,17 +11,16 @@ public class Car extends Vehicle implements Drivable{
 	
 	public double sell(int quantity) {
 		numSold += quantity;
-		return get.Price * quantity;
+		return getPrice() * quantity;
 	}
 	
 	public static int getNumSold(){
-		System.out.println("The sold car is " + name);
-	return numSold;
-*/	
-	
+		return numSold;
+	}
+}
 ///// THE BELOW  REFERS TO THE INTERFACE IMPLEMENTATION EXAMPLE.////////////////////////////////////
 	
-	public Car(String name, double price) {
+/*	public Car(String name, double price) {
 		super(price);
 	}
 	
@@ -50,5 +49,5 @@ public class Car extends Vehicle implements Drivable{
         return true;
     }
 	
-	
-}
+*/	
+

@@ -5,8 +5,8 @@ public abstract class Vehicle {
 	private double price;
 	private int quantity; 
 	
-	protected Vehicle(double price) { // price in K
-		price = this.price * 1000;
+	public Vehicle(double price) { // price in K
+		this.price = price * 1000;
 	}
 	
 	public double getPrice() {
