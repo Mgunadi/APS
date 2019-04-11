@@ -6,4 +6,7 @@ public class Paper {
 	private String b = "article3";
 	private String c = "memo12";
 
+	public Paper (String s) {
+		a = s;
+	}
 }

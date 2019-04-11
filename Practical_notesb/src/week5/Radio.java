@@ -1,11 +1,14 @@
 package week5;
 
-public class Radio {
+public class Radio implements Switch {
 	private boolean state; 
+	private String station;
 	
-	
-	public void changeStation() {
-		
+	public Radio(String s) {
+		station = s;
+	}
+	public void changeStation(String s) {
+		station = s;
 	}
 	
 	public void switch1() {
