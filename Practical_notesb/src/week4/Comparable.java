@@ -1,4 +1,5 @@
 package week4;
+import java.util.* ;
 
 public class Comparable {
 
@@ -9,7 +10,7 @@ public class Comparable {
 
 	        Double[] d = new Double[10];
 	        for (int i = 0; i < d.length; i++)
-	            d[i] = new Double(d.length - i);
+	            d[i] = Double.valueOf(d.length - i);
 
 	        System.out.println("Before sorting:");
 	        int i;
