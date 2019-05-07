@@ -21,3 +21,4 @@ class Sample<T> {
 		System.out.println("Data is: " + data);
 	}
 }
+
