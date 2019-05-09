@@ -9,9 +9,13 @@ public class Customer {
     public String getFirstname() {return firstname;}
     public int getAge(){return age;}
 
-    public Customer(String firstname, String surname, int age)
-    {   this.firstname = firstname;
+    public Customer(String firstname, String surname, int age){
+    	this.firstname = firstname;
         this.surname = surname;
         this.age = age;
     }
+    
+    public Customer() {
+    }
+    
 }
