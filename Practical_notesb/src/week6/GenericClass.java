@@ -1,4 +1,5 @@
 package week6;
+import week3.Account;
 import week3.Customer;
 
 public class GenericClass {
