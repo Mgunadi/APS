@@ -8,6 +8,7 @@ public class Throwing2 {
       
         try{
             Arith4.divide(a, b );
+   	        System.out.println("Hello"); // this line never gets run because of the exception which is caught.
   	  	}
   	  	catch(Exception e){
             System.err.println(e.getMessage());     // The message is produced by the method causing causing the error (propagated to this catch) 
@@ -22,6 +23,7 @@ class Arith4 {
     { 
     	try {
     		System.out.println(a/b);
+    		
     	}
     	catch(Exception e) {
     		throw new Exception("My mistake");  //the exception must be thrown back to the original method that calls this one 'throw new'

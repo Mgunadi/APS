@@ -1,11 +1,13 @@
 package revision;
 
 public class Test {
-	/* Q7
+	 //Q7
+	/*
 	 * public static void main(String[] args ) { String entries [] = { "entry1" ,
 	 * "entry2" }; int count = 0; while ( entries [ count ++] != null ) { System.
 	 * out .println( count ); } System. out .println( count ); }
 	 */
+	 
 
 	/* Test while loop with increments
 	 * public static void main(String[] args ) { int num = 0; while (num < 13) {
@@ -29,9 +31,8 @@ public class Test {
 	 * System. out .println( "javachamp" ); }
 	 */
 
-	
-	public static void main(String[] Args ) {
-		Employee e = new Employee("JavaDeveloper");
-		System. out .println( "Emp Name : " + e.name );
+	public static void main(String[] args ) {
+	for (int i=1; i <=5; i++) { if(i<=3) continue; System.out.print(i + "*");} System.out.println("end");
 	}
+	
 }

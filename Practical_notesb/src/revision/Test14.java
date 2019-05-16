@@ -1,7 +1,7 @@
 package revision;
 
 class Base {
-public final int getNext( int i ) {
+public final int getNext( int i ) { //note final
 return ++ i ;
 }
 }
